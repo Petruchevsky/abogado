@@ -1,0 +1,157 @@
+
+.section-trayectoria {
+    background-image: url("/img/trayectoria.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img-div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 22%;
+  }
+  
+  .keanu {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: solid 2px var(--white);
+  }
+
+  .article-trayectoria {
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 76.5%;
+    padding: 5rem;
+    border-radius: 20px;
+    border: solid 2px var(--white);
+    width: 77%;
+  }
+  
+  /* ---------------------------------------------------------------------------------------------------*/
+  
+  /* Estilos para Pantallas Grandes */
+  @media (max-width: 2000px) and (min-width: 1440px) {
+    
+    .section-trayectoria {
+      padding: 3.5rem;
+    }
+    
+    .img-div {
+      gap: 3rem;
+      width: 30%;
+    }
+
+    .keanu {
+      width: 100%;
+    }
+    
+    .article-trayectoria {
+      width: 68%;
+      padding: 4rem;
+    }
+    
+  }
+  
+  /* ---------------------------------------------------------------------------------------------------*/
+  
+  /* Estilos para Laptops */
+  @media (max-width: 1439px) and (min-width: 1024px) {
+    
+    .section-trayectoria {
+      padding: 3.5rem;
+      flex-direction: column;
+      gap: 3rem;
+    }
+    
+    .img-div {
+      gap: 3rem;
+      width: 48%;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .keanu {
+      width: 100%;
+      border: solid 2px var(--white);
+    }
+    
+    .article-trayectoria {
+      width: 100%;
+      padding: 3rem;
+      border-radius: 15px;
+      border: solid 2px var(--white);
+    }
+  }
+  
+  /* ---------------------------------------------------------------------------------------------------*/
+  
+  /* Estilos para Tablets */
+  @media (max-width: 1023px) and (min-width: 602px) {
+    
+    .section-trayectoria {
+      padding: 3.5rem;
+      flex-direction: column;
+      gap: 3rem;
+    }
+    
+    .img-div {
+      gap: 3rem;
+      width: 48%;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .keanu {
+      width: 100%;
+      border: solid 2px var(--white);
+    }
+    
+    .article-trayectoria {
+      width: 100%;
+      padding: 3rem;
+      border-radius: 15px;
+      border: solid 2px var(--white);
+    }
+  }
+  
+  /* ---------------------------------------------------------------------------------------------------*/
+  
+  /* Estilos para Móviles */
+  @media (max-width: 600px) {
+    
+    .section-trayectoria {
+      padding: 0rem 0 0 0;
+      flex-direction: column;
+      gap: 0;
+    }
+    
+    .img-div {
+      gap: 0;
+      width: 50%;
+      padding: 0;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .keanu {
+      width: 100%;
+      border-radius: 0;
+      margin: 0;
+      border: none;
+    }
+    
+    .article-trayectoria {
+      width: 100%;
+      padding: 2rem;
+      border: none;
+      border-radius: 0;
+    }
+  }

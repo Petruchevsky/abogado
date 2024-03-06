@@ -1,0 +1,138 @@
+.section-introduccion {
+  width: 47%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-areas {
+    background-image: url("/img/areas.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .div-x-areas {
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .article-area {
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 37%;
+    padding: 5rem;
+    border-radius: 20px;
+    border: solid 2px var(--white);
+  }
+  
+  /* ---------------------------------------------------------------------------------------------------*/
+  
+  /* Estilos para Pantallas Grandes */
+  @media (max-width: 2000px) and (min-width: 1440px) {
+    
+    .section-introduccion {
+      width: 57%;
+    }
+    
+    .section-areas {
+        gap: 3rem;
+      }
+    
+      .div-x-areas {
+        justify-content: center;
+        gap: 3rem;
+      }
+    
+      .article-area {
+        width: 50%;
+      }
+    
+  }
+  
+  /* ---------------------------------------------------------------------------------------------------*/
+  
+  /* Estilos para Laptops */
+  @media (max-width: 1439px) and (min-width: 1024px) {
+    
+    .section-introduccion {
+      width: 80%;
+    }
+    
+    .section-areas {
+        gap: 2rem;
+        padding: 2rem;
+      }
+      
+      .div-x-areas {
+        justify-content: center;
+        gap: 2rem;
+        flex-direction: column;
+        width: 100%;
+      }
+    
+      .article-area {
+        width: 100%;
+        padding: 2rem 3rem;
+      }
+  }
+  
+  /* ---------------------------------------------------------------------------------------------------*/
+  
+  /* Estilos para Tablets */
+  @media (max-width: 1023px) and (min-width: 601px) {
+     
+    .section-introduccion {
+      width: 100%;
+      padding: 0 2rem;
+    }
+    
+    .section-areas {
+        gap: 2rem;
+        padding: 2rem;
+      }
+      
+      .div-x-areas {
+        justify-content: center;
+        gap: 2rem;
+        flex-direction: column;
+        width: 100%;
+      }
+    
+      .article-area {
+        width: 100%;
+        padding: 2rem;
+      }
+  }
+  
+  /* ---------------------------------------------------------------------------------------------------*/
+  
+  /* Estilos para Móviles */
+  @media (max-width: 600px) {
+    .section-introduccion {
+      width: 100%;
+      padding: 0 2rem;
+    }
+    
+    .section-areas {
+        gap: 1rem;
+        padding: 1rem;
+      }
+      
+      .div-x-areas {
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column;
+        width: 100%;
+      }
+    
+      .article-area {
+        width: 100%;
+        padding: 2rem;
+      }
+  }

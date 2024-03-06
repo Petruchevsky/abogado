@@ -1,18 +1,17 @@
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import HomePageComponent from "./components/HomePageComponent";
-import Contact from "./contacto/page";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
+import TrayectoriaComponente from "../components/TrayectoriaComponent";
+import Footer from "../components/Footer";
 
 export const metadata = {
-	title: "Inicio",
-	description: "Bienvenido(a) a mi sitio web!",
+	title: "Trayectoria",
+	description: "Más de 25 años de Trayectoria Profesional",
 };
 
 async function getData() {
 	try {
 		const response = await fetch(
-			`${process.env.NEXT_PUBLIC_API_URL}/api/home`,
+			`${process.env.NEXT_PUBLIC_API_URL}/api/trayectoria`,
 			{ cache: "no-store" }
 		);
 
@@ -24,15 +23,13 @@ async function getData() {
 
 		const data = await response.json();
 		return data;
-
 	} catch (error) {
-		console.error("Error en getData:", error); 
-		throw error; 
+		console.error("Error en getData:", error);
+		throw error;
 	}
 }
 
-async function Home() {
-
+async function Trayectoria() {
 	const data = await getData();
 	const titulo = data?.titulo;
 	const descripcion = data?.descripcion;
@@ -41,11 +38,10 @@ async function Home() {
 		<main className="main-container-y">
 			<Header />
 			<Navbar />
-			<HomePageComponent props={{ titulo, descripcion }}/>
-			<Contact />
+			<TrayectoriaComponente props={{ titulo, descripcion }} />
 			<Footer />
 		</main>
 	);
 }
 
-export default Home;
+export default Trayectoria;

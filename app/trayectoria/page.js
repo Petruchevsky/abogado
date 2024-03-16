@@ -9,7 +9,7 @@ export const metadata = {
 		title: "Trayectoria",
 		description: "Más de 25 años de Trayectoria Profesional",
 		images: {
-			url: "/img/logo.jpeg",
+			url: "https://res.cloudinary.com/diqtyq9j2/image/upload/v1710605702/xysrfwbblqiawhne7ipu.jpg",
 		},
 		locale: "es_CL",
 		type: "website",

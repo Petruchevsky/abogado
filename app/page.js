@@ -4,9 +4,17 @@ import Footer from "./components/Footer";
 import HomePageComponent from "./components/HomePageComponent";
 import Contact from "./contacto/page";
 
+
 export const metadata = {
-	title: "Inicio",
-	description: "Experto en derecho Familiar y Sucesorio",
+	openGraph: {
+		title: "Inicio",
+		description: "Experto en Derecho Familiar y Sucesorio",
+		images: {
+			url: "https://res.cloudinary.com/diqtyq9j2/image/upload/v1710605702/xysrfwbblqiawhne7ipu.jpg",
+		},
+		locale: "es_CL",
+		type: "website",
+	},
 };
 
 async function getData() {

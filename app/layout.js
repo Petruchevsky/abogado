@@ -11,7 +11,7 @@ export const metadata = {
 		title: "Orlando Rojas Abogado",
 		description: "Experto en derecho Familiar y Sucesorio",
 		images: {
-			url: "/img/logo-png.png",
+			url: "/img/logo.jpeg",
 		},
 		locale: "es_CL",
 		type: "website",

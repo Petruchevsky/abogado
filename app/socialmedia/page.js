@@ -1,8 +1,16 @@
 import SocialComponent from "../components/SocialComponent";
 
+
 export const metadata = {
-	title: "Socialmedia",
-	description: "Nuestro link al mundo de las redes...",
+	openGraph: {
+		title: "Socialmedia",
+		description: "Nuestro link al mundo de las redes...",
+		images: {
+			url: "/img/logo.jpeg",
+		},
+		locale: "es_CL",
+		type: "website",
+	},
 };
 
 function Socialmedia() {

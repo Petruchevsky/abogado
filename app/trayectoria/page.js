@@ -3,9 +3,17 @@ import Navbar from "../components/Navbar";
 import TrayectoriaComponente from "../components/TrayectoriaComponent";
 import Footer from "../components/Footer";
 
+
 export const metadata = {
-	title: "Trayectoria",
-	description: "Más de 25 años de Trayectoria Profesional",
+	openGraph: {
+		title: "Trayectoria",
+		description: "Más de 25 años de Trayectoria Profesional",
+		images: {
+			url: "/img/logo.jpeg",
+		},
+		locale: "es_CL",
+		type: "website",
+	},
 };
 
 async function getData() {

@@ -1,8 +1,16 @@
 import AdminPageComponent from "@/app/components/AdminPageComponent";
 
+
 export const metadata = {
-	title: "Admin",
-	description: "Bienvenido(a) al Modo Administrador",
+	openGraph: {
+		title: "Admin",
+		description: "Bienvenido(a) al Modo Administrador",
+		images: {
+			url: "/img/logo.jpeg",
+		},
+		locale: "es_CL",
+		type: "website",
+	},
 };
 
 function AdminPage() {

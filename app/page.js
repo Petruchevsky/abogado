@@ -6,8 +6,15 @@ import Contact from "./contacto/page";
 
 
 export const metadata = {
-	title: "Inicio",
-	description: "Bienvenido(a) a mi sitio web!",
+	openGraph: {
+		title: "Inicio",
+		description: "Experto en derecho Familiar y Sucesorio",
+		images: {
+			url: "/img/logo.jpeg",
+		},
+		locale: "es_CL",
+		type: "website",
+	},
 };
 
 async function getData() {

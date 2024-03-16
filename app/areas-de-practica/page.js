@@ -3,9 +3,17 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AreasComponente from "../components/AreasComponent";
 
+
 export const metadata = {
-	title: "Areas de Práctica",
-	description: "Listado de las Areas de Práctica del Derecho de Familia y Sucesorio",
+	openGraph: {
+		title: "Areas de Práctica",
+		description: "Listado de las Areas de Práctica del Derecho de Familia y Sucesorio",
+		images: {
+			url: "/img/logo.jpeg",
+		},
+		locale: "es_CL",
+		type: "website",
+	},
 };
 
 async function getData() {

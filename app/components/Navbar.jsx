@@ -8,6 +8,7 @@ import { MdOutlineQueryStats } from "react-icons/md";
 import { TbTextWrapDisabled } from "react-icons/tb";
 import { TbMessageCircleQuestion } from "react-icons/tb";
 import { BsIncognito } from "react-icons/bs";
+import { Zoom, Fade } from "react-awesome-reveal";
 
 
 function Navbar() {
@@ -37,6 +38,7 @@ function Navbar() {
 
 	return (
 		<nav className="navbar">
+				<Zoom cascade damping={0.1}>
 			<Link href="/" className={isActive("/")}>
 				<MdHome />
 				Inicio
@@ -57,6 +59,7 @@ function Navbar() {
 				<TbMessageCircleQuestion />
 				Contacto
 			</Link>
+		</Zoom>
 		</nav>
 	);
 }

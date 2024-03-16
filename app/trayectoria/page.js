@@ -29,7 +29,9 @@ async function getData() {
 	}
 }
 
+
 async function Trayectoria() {
+
 	const data = await getData();
 	const titulo = data?.titulo;
 	const descripcion = data?.descripcion;

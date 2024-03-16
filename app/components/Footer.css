@@ -124,11 +124,11 @@ footer {
 	}
 	
 	.developedBy {
-		padding: .7rem 12rem;
+		padding: .5rem 12rem;
 	}
 	
 	.developedBy a {
-		font-size: 13px;
+		font-size: 11px;
 	}
 	
 	.developedBy > a:nth-child(2) {

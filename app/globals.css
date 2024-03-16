@@ -56,13 +56,50 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 2rem;
+	gap: 3rem;
+	padding: 2rem 0;
+	width: 100%;
+}
+
+.logo-sm {
+	width: 25rem;
+	height: auto;
+}
+
+.icon-key {
+	width: 5rem;
+	font-size: 4.5rem;
+}
+
+.text-icon-aligner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	font-size: 3rem;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.m-auto {
+	margin: 0 auto;
+}
+
+.m-0 {
+	margin: 0;
+}
+
+.text-l {
+	text-align: left !important;
+
 }
 
 h1 {
 	font-size: 3.3rem;
 	color: var(--white);
-	font-weight: 300;
+	font-weight: 500;
 	margin-bottom: 3rem;
 }
 
@@ -118,6 +155,7 @@ label {
 	line-height: 4rem;
 	margin-bottom: 0rem;
 	width: 100%;
+	font-weight: 300;
 }
 
 form {
@@ -125,32 +163,34 @@ form {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 2rem;
 	text-align: center;
+	width: 100%;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
 	font-size: 2.4rem;
-	text-align: center;
+	text-align: left;
 	padding: 1.2rem 2.5rem;
 	border-radius: 8px;
 	border: solid 1px transparent;
 	transition: all 400ms;
+	margin-bottom: 5rem;
+	width: 100%;
 }
 
 textarea {
 	font-size: 2.4rem;
 	text-align: left;
 	padding: 1rem 2rem;
-	margin: 0 1rem;
 	border-radius: 10px;
 	transition: all 400ms;
 	height: 30rem;
 	width: 100%;
 	font-family: inherit;
 	line-height: 3.5rem;
+	margin-bottom: 5rem;
 }
 
 input[type="text"]:hover,
@@ -171,22 +211,24 @@ textarea:focus {
 	border: solid 1px var(--blue);
 }
 
-
-.link-button {
+.link-button, .link-button-success, .link-button-danger {
 	font-size: 2.4rem;
 	font-weight: 400;
 	padding: 1.2rem 2.5rem;
 	border-radius: 8px;
-	border: solid 2px var(--lightgray);
 	background-color: var(--black);
 	color: var(--lightgray);
 	transition: all 200ms;
-	width: 37rem;
+	width: 50rem;
 	text-decoration: none;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	gap: 1rem;
+}
+
+.link-button {
+	border: solid 2px var(--lightgray);
 }
 
 .link-button:hover,
@@ -198,21 +240,7 @@ textarea:focus {
 }
 
 .link-button-danger {
-	font-size: 2.4rem;
-	font-weight: 400;
-	padding: 1.2rem 2.5rem;
-	border-radius: 8px;
 	border: solid 2px var(--red);
-	background-color: var(--black);
-	color: var(--lightgray);
-	transition: all 200ms;
-	width: 37rem;
-	text-decoration: none;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
 }
 
 .link-button-danger:hover {
@@ -223,21 +251,7 @@ textarea:focus {
 }
 
 .link-button-success {
-	font-size: 2.4rem;
-	font-weight: 400;
-	padding: 1.2rem 2.5rem;
-	border-radius: 8px;
 	border: solid 2px var(--green);
-	background-color: var(--black);
-	color: var(--lightgray);
-	transition: all 200ms;
-	width: 37rem;
-	text-decoration: none;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
 }
 
 .link-button-success:hover {
@@ -250,10 +264,6 @@ textarea:focus {
 svg {
 	color: var(--white);
 	font-size: 3rem;
-}
-
-.bsp {
-	box-shadow: 3px -3px 10px var(--white);
 }
 
 .link, .link > p {
@@ -270,29 +280,28 @@ svg {
 }
 
 .success {
-	color: var(--black);
 	background-color: var(--green);
+	box-shadow: 0 0 10px var(--green);
+	color: var(--black);
+
+}
+
+.error {
+	background-color: var(--red);
+	box-shadow: 0 0 10px var(--red);
+	color: var(--white);
+}
+
+.success, .error {
 	padding: 1.2rem 3rem;
 	border-radius: 8px;
-	box-shadow: 0 0 10px var(--green);
 	text-align: center;
 	width: 100%;
-	margin: 0;
+	margin: 3rem 0 1rem 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
-}
-
-.error {
-	color: var(--white);
-	background-color: var(--red);
-	padding: 1.2rem 3rem;
-	border-radius: 8px;
-	box-shadow: 0 0 10px var(--red);
-	text-align: center;
-	width: 100%;
-	margin: 0;
 }
 
 .hidden {
@@ -316,6 +325,24 @@ svg {
 /* Estilos para Pantallas Grandes */
 @media (max-width: 2000px) and (min-width: 1440px) {
 
+	.logo-sm {
+		width: 16rem;
+		height: auto;
+	}
+
+	.button-container {
+		gap: 2rem;
+	}
+
+	.icon-key {
+		width: 3rem;
+		font-size: 3rem;
+	}
+
+	.text-icon-aligner {
+		font-size: 2rem;
+	}
+	
 	h1 {
 		font-size: 2rem;
 		margin-bottom: 2rem;
@@ -352,7 +379,7 @@ svg {
 
 	label {
 		font-size: 1.6rem;
-		line-height: 3.5rem;
+		line-height: 3rem;
 	}
 
 	input[type="text"],
@@ -360,6 +387,7 @@ svg {
 	input[type="password"] {
 		font-size: 1.4rem;
 		padding: 1.2rem 1.5rem;
+		margin-bottom: 3rem;
 	}
 
 	textarea {
@@ -372,17 +400,15 @@ svg {
 	.link-button, .link-button-success, .link-button-danger {
 		font-size: 1.6rem;
 		padding: 1rem 1.5rem;
-		width: 24rem;
+		width: 40rem;
 	}
 
 	svg {
 		font-size: 2rem;
 	}
 
-	form {
-		display: flex;
-		width: fit-content;
-		text-align: center;
+	.success, .error {
+		margin: 2rem 0 0rem 0;
 	}
 }
 
@@ -391,6 +417,24 @@ svg {
 /* Estilos para Laptops */
 @media (max-width: 1439px) and (min-width: 1024px) {
 
+	.logo-sm {
+		width: 16rem;
+		height: auto;
+	}
+
+	.button-container {
+		gap: 2rem;
+	}
+
+	.icon-key {
+		width: 3rem;
+		font-size: 3rem;
+	}
+
+	.text-icon-aligner {
+		font-size: 2rem;
+	}
+	
 	h1 {
 		font-size: 2rem;
 		margin-bottom: 2rem;
@@ -435,6 +479,7 @@ svg {
 	input[type="password"] {
 		font-size: 1.4rem;
 		padding: 1.2rem 1rem;
+		margin-bottom: 3rem;
 	}
 
 	textarea {
@@ -446,8 +491,8 @@ svg {
 	}
 
 	.link-button, .link-button-success, .link-button-danger {
-		flex: 0 0 35%;
-		width: 33rem;
+		flex: 0 0 48%;
+		width: 37rem;
 		font-size: 1.6rem;
 		padding: 1rem 1.5rem;
 	}
@@ -456,10 +501,8 @@ svg {
 		font-size: 2rem;
 	}
 
-	form {
-		display: flex;
-		width: fit-content;
-		text-align: center;
+	.success, .error {
+		margin: 2rem 0 0rem 0;
 	}
 
 }
@@ -469,6 +512,25 @@ svg {
 /* Estilos para Tablets */
 @media (max-width: 1023px) and (min-width: 601px) {
 
+	.logo-sm {
+		width: 14rem;
+		height: auto;
+	}
+
+	.button-container {
+		gap: 1rem;
+		padding: 1rem 0;
+	}
+
+	.icon-key {
+		width: 3rem;
+		font-size: 2.5rem;
+	}
+
+	.text-icon-aligner {
+		font-size: 1.7rem;
+	}
+	
 	h1 {
 		font-size: 1.8rem;
 		margin-bottom: 2rem;
@@ -513,6 +575,8 @@ svg {
 	input[type="password"] {
 		font-size: 1.3rem;
 		padding: 1rem;
+		margin-bottom: 2rem;
+		width: 100%;
 	}
 
 	textarea {
@@ -526,19 +590,18 @@ svg {
 		font-size: 1.4rem;
 		padding: 1rem 1.5rem;
 		border-radius: 6px;
-		flex: 0 0 34%;
-		width: 30rem;
+		flex: 0 0 48%;
+		width: 27rem;
 	}
 
 	svg {
 		font-size: 2rem;
 	}
 
-	form {
-		display: flex;
-		width: fit-content;
-		text-align: center;
+	.success, .error {
+		margin: 2rem 0 1rem 0;
 	}
+
 }
 
 /* --------------------------------------------------------------------------- */
@@ -546,6 +609,20 @@ svg {
 /* Estilos para Móviles */
 @media (max-width: 600px) {
 
+	.logo-sm {
+		width: 12rem;
+		height: auto;
+	}
+
+	.icon-key {
+		width: 3rem;
+		font-size: 2.5rem;
+	}
+
+	.text-icon-aligner {
+		font-size: 1.5rem;
+	}
+	
 	h1 {
 		font-size: 1.8rem;
 		margin-bottom: 2rem;
@@ -583,16 +660,16 @@ svg {
 
 	label {
 		font-size: 1.4rem;
-		line-height: 1rem;
+		line-height: 2.5rem;
 	}
 
 	input[type="text"],
 	input[type="email"],
 	input[type="password"] {
 		font-size: 1.3rem;
-		text-align: center;
+		text-align: left;
 		padding: 1rem;
-		margin: 0 1rem;
+		margin-bottom: 2rem;
 		border-radius: 5px;
 		transition: all 400ms;
 	}
@@ -603,6 +680,7 @@ svg {
 		padding: 1rem;
 		border-radius: 5px;
 		line-height: 1.7rem;
+		margin-bottom: 3rem;
 	}
 
 	input[type="submit"] {
@@ -613,7 +691,7 @@ svg {
 		font-size: 1.4rem;
 		padding: 1rem 1.5rem;
 		border-radius: 5px;
-		flex: 0 0 90%;
+		flex: 0 0 100%;
 		width: 25rem;
 	}
 
@@ -621,9 +699,12 @@ svg {
 		font-size: 1.8rem;
 	}
 
-	form {
-		display: flex;
-		width: fit-content;
-		text-align: center;
+	.button-container {
+		flex-direction: column;
+		gap: 2rem;
+	  }
+
+	  .success, .error {
+		margin: 2rem 0 0 0;
 	}
 }

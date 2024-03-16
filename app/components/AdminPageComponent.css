@@ -5,7 +5,7 @@
     background-position: bottom;
     background-repeat: no-repeat;
     width: 100%;
-    padding: 22rem;
+    padding: 17rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,18 +26,6 @@
     text-align: center;
   }
 
-  .logo-admin {
-    width: 25rem;
-    height: auto;
-  }
-
-  .formulario {
-    width: 100%;
-  }
-
-  .formulario > input[type="text"], .formulario > input[type="email"], .formulario > input[type="password"], .formulario > input[type="submit"], .formulario > textarea, .formulario > input[type="button"] {
-    width: 80%;
-  }
   
   /* ---------------------------------------------------------------------------------------------------*/
   
@@ -45,12 +33,12 @@
   @media (max-width: 2000px) and (min-width: 1440px) {
     
     .section-admin {
-      padding: 16rem;
+      padding: 10rem 0rem;
     }  
     
     .article-admin {
-      width: 60%;
-      padding: 4rem;
+      width: 40%;
+      padding: 4rem 3rem;
     }
 
     .logo-admin {
@@ -66,18 +54,14 @@
   @media (max-width: 1439px) and (min-width: 1024px) {
     
     .section-admin {
-      padding: 5rem 0rem;
+      padding: 10rem 0rem;
     }  
     
     .article-admin {
-      width: 60%;
+      width: 50%;
       padding: 4rem 2rem;
     }
 
-    .logo-admin {
-      width: 16rem;
-      height: auto;
-    }
   }
   
   /* ---------------------------------------------------------------------------------------------------*/
@@ -86,17 +70,12 @@
   @media (max-width: 1023px) and (min-width: 601px) {
     
     .section-admin {
-      padding: 10rem 0rem;
+      padding: 13rem 0rem;
     }  
     
     .article-admin {
       width: 70%;
-      padding: 4rem 2rem;
-    }
-
-    .logo-admin {
-      width: 16rem;
-      height: auto;
+      padding: 3rem;
     }
     
   }
@@ -107,27 +86,17 @@
   @media (max-width: 600px) {
     
     .section-admin {
-      padding: 0rem 0rem;
+      padding: 0;
     }  
-    
-    .article-admin {
-      width: 50%;
-      padding: 4rem;
-    }
-
-    .logo-admin {
-      width: 15rem;
-      height: auto;
-    }
     
     .article-admin {
       width: 100%;
       height: auto;
-      padding: 5rem 1rem 25rem 1rem;
+      padding: 10rem 1rem 25rem 1rem;
       margin: 0;
       border: none;
       border-radius: 0%;
       backdrop-filter: blur(0px);
-    background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.7);
     }
   }

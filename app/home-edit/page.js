@@ -2,12 +2,14 @@
 import { FaSave } from "react-icons/fa";
 import { MdLock } from "react-icons/md";
 import { MdHome } from "react-icons/md";
+import Link from "next/link";
 import { GrStatusGood } from "react-icons/gr";
 import { useAuth } from "../context/auth-context";
-import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import "./homedit.css";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 function HomeEdit() {
 	const [titulo, setTitulo] = useState("");
@@ -27,6 +29,11 @@ function HomeEdit() {
 			try {
 				const res = await fetch("/api/home", { cache: "no-store" });
 				const data = await res.json();
+
+				if (data === null) {
+					return;
+				}
+
 				setTitulo(data.titulo);
 				setDescripcion(data.descripcion);
 			} catch (error) {
@@ -55,56 +62,70 @@ function HomeEdit() {
 		}
 	};
 
-
-
 	return (
-		<main className="container section-homedit">
-			<div className="article-homedit">
-				<form onSubmit={handleSubmit} className="container form formulario">
-					<label htmlFor="titulo" className="text-center">Título</label>
-					<input
-						type="text"
-						value={titulo}
-						onChange={(e) => setTitulo(e.target.value)}
-						placeholder="Ingresa el nuevo título"
-						required
-					/>
-					<label htmlFor="descripcion" className="text-center">Descripción</label>
-					<textarea
-						type="text"
-						value={descripcion}
-						onChange={(e) => setDescripcion(e.target.value)}
-						placeholder="Ingresa el nuevo texto"
-						required
-						className="py-1"
-					/>
-					<button className="link-button-success" type="submit">
-						<FaSave />
-						Guardar Cambios
-					</button>
-					{edit && (
-						<p className="success">
-							<GrStatusGood className="black-color"/>
-							Guardado con éxito!
-						</p>
-					)}
-				</form>
-				<div className="button-container">
-					<Link href="/" className="link-button">
-						<MdHome />
-						Volver al Inicio
-					</Link>
-					<button
-						type="button"
-						className="link-button-danger"
-						onClick={() => logout()}
-					>
-						<MdLock />
-						Salir Modo Admin
-					</button>
-				</div>
-			</div>
-		</main>
+		<Fade duration={3000}>
+			<main className="container section-homedit">
+				<section className="article-homedit">
+					<Zoom cascade damping={0.2} delay={300}>
+						<Image
+							src="/img/logo-png.png"
+							width={500}
+							height={500}
+							alt="logo de Orlando Rojas"
+							className="logo-sm"
+						/>
+						<h1>Editor de Página de Inicio</h1>
+					</Zoom>
+
+					<form onSubmit={handleSubmit}>
+						<Zoom cascade damping={0.2} delay={300} className="w-100 text-l">
+							<label htmlFor="titulo">Título</label>
+							<input
+								type="text"
+								value={titulo}
+								onChange={(e) => setTitulo(e.target.value)}
+								placeholder="Ingresa el nuevo título"
+								required
+							/>
+							<label htmlFor="descripcion">Descripción</label>
+							<textarea
+								type="text"
+								value={descripcion}
+								onChange={(e) => setDescripcion(e.target.value)}
+								placeholder="Ingresa el nuevo texto"
+								required
+							/>
+						</Zoom>
+						<button className="link-button-success" type="submit">
+							<FaSave />
+							Guardar Cambios
+						</button>
+						{edit && (
+							<Zoom className="w-100">
+								<p className="success">
+									<GrStatusGood className="black-color" />
+									Guardado con éxito!
+								</p>
+							</Zoom>
+						)}
+					</form>
+					<div className="button-container">
+						<Link href="/" className="link-button">
+							<MdHome />
+							Volver al Inicio
+						</Link>
+						<button
+							type="button"
+							className="link-button-danger"
+							onClick={() => logout()}
+						>
+							<MdLock />
+							Salir Modo Admin
+						</button>
+					</div>
+				</section>
+			</main>
+		</Fade>
 	);
 }
 

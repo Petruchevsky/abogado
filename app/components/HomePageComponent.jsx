@@ -4,6 +4,7 @@ import { useAuth } from "../context/auth-context";
 import Link from "next/link";
 import "./HomePageComponent.css";
 import { useEffect } from "react";
+import { Fade, Slide, Flip } from "react-awesome-reveal";
 
 function HomePageComponent({ props }) {
 
@@ -23,7 +24,9 @@ function HomePageComponent({ props }) {
 
 	return (
 		<main className="main-container-y">
+			<Fade duration={3000}>
 			<section className="section-home">
+				<Slide>
 				<article className="article-home">
 					<h1>{titulo}</h1>
 					<div><pre className="pre-tag">{descripcion}</pre></div>
@@ -35,7 +38,9 @@ function HomePageComponent({ props }) {
 						Editar
 					</Link>
 				</article>
+				</Slide>
 			</section>
+			</Fade>
 		</main>
 	);
 }

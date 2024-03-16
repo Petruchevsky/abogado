@@ -4,6 +4,7 @@ import { MdLock } from "react-icons/md";
 import { GrStatusGood } from "react-icons/gr";
 import { useAuth } from "../context/auth-context";
 import Link from "next/link";
+import Image from 'next/image'
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import "./areas-edit.css";
@@ -42,7 +43,6 @@ function AreasEdit() {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-
 		const data = { introduccion, derechoFamilia, derechoSucesorio };
 
 		try {
@@ -64,26 +64,28 @@ function AreasEdit() {
 	return (
 		<main className="container section-areas-edit">
 			<div className="article-areas-edit">
-				<form onSubmit={handleSubmit} className="container form formulario">
-					<label className="text-center" htmlFor="introduccion">Introducción</label>
+			<Image src="/img/logo-png.png" width={500} height={500} alt="logo de Orlando Rojas" className="logo-sm" />
+        	<h1>Editor de Página de Areas de Práctica</h1>
+				
+				<form onSubmit={handleSubmit}>
+					<label htmlFor="introduccion">Introducción</label>
 					<textarea
 						type="text"
 						value={introduccion}
 						onChange={(e) => setIntroduccion(e.target.value)}
 						placeholder="Ingresa el nuevo texto para tu introducción"
-						required
-						className="py-1"
+						
 					/>
-					<label className="text-center" htmlFor="derechoFamilia">Derecho de Familia</label>
+					<label htmlFor="derechoFamilia">Derecho de Familia</label>
 					<textarea
 						type="text"
 						value={derechoFamilia}
 						onChange={(e) => setDerechoFamilia(e.target.value)}
 						placeholder="Ingresa el nuevo texto para Derecho de Familia"
 						required
-						className="py-1"
+						
 					/>
-                    <label className="text-center" htmlFor="derechoFamilia">Derecho Sucesorio</label>
+                    <label htmlFor="derechoFamilia">Derecho Sucesorio</label>
 
 					<textarea
 						type="text"
@@ -91,7 +93,7 @@ function AreasEdit() {
 						onChange={(e) => setDerechoSucesorio(e.target.value)}
 						placeholder="Ingresa el nuevo texto para Derecho Sucesorio"
 						required
-						className="py-1"
+						
 					/>
 					<button className="link-button-success" type="submit">
 						<FaSave />

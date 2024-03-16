@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import AreasComponente from "../components/AreasComponent";
 
 export const metadata = {
@@ -39,6 +40,7 @@ async function AreasPractica() {
 			<Header />
 			<Navbar />
 			<AreasComponente props={{ introduccion, derechoFamilia, derechoSucesorio }} />
+			<Footer />
 		</main>
 	);
 }

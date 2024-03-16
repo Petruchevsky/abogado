@@ -5,36 +5,24 @@
     padding: 7rem 0;
 }
 
+.section-contact {
+    width: 40%;
+}
+
 .title {
     text-align: center;
     margin-bottom: 8rem;
 }
 
-.form-contact {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin: 0 auto;
-}
-
-.form-contact > input, .form-contact > textarea {
-	width: 100%;
-    margin-bottom: 3rem;
-    text-align: left;
-}
-
 .successMsg {
 	color: var(--black);
 	background-color: var(--green);
-	padding: 1.2rem 3rem;
+	padding: 1.4rem 3rem;
 	border-radius: 8px;
 	box-shadow: 0 0 10px var(--green);
 	text-align: center;
 	width: 100%;
-	margin: 0;
+    margin-top: 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -44,12 +32,12 @@
 .errorMsg {
 	color: var(--white);
 	background-color: var(--red);
-	padding: 1.2rem 3rem;
+	padding: 1.4rem 3rem;
 	border-radius: 8px;
 	box-shadow: 0 0 10px var(--red);
 	text-align: center;
 	width: 100%;
-	margin: 0;
+	margin-top: 2rem;
 }
 
   /* ---------------------------------------------------------------------------------------------------*/
@@ -59,6 +47,10 @@
     
     .main-container-contact {
         padding: 5rem 0;
+    }
+
+    .section-contact {
+        width: 50%;
     }
     
     .title {
@@ -79,11 +71,11 @@
     
     
     .successMsg {
-        padding: .5rem 3rem;
+        padding: 1rem 3rem;
     }
     
     .errorMsg {
-        padding: .5rem 3rem;
+        padding: 1rem 3rem;
     }
     
   }
@@ -95,6 +87,10 @@
     
     .main-container-contact {
         padding: 4rem 0;
+    }
+
+    .section-contact {
+        width: 60%;
     }
     
     .title {
@@ -115,11 +111,11 @@
     
     
     .successMsg {
-        padding: .5rem 1.5rem;
+        padding: 1rem 1.5rem;
     }
     
     .errorMsg {
-        padding: .5rem 1.5rem;
+        padding: 1rem 1.5rem;
     }
   }
   
@@ -130,6 +126,10 @@
    
     .main-container-contact {
         padding: 3rem 0;
+    }
+
+    .section-contact {
+        width: 70%;
     }
     
     .title {
@@ -150,11 +150,11 @@
     
     
     .successMsg {
-        padding: .5rem 1.5rem;
+        padding: 1rem 1.5rem;
     }
     
     .errorMsg {
-        padding: .5rem 1.5rem;
+        padding: 1rem 1.5rem;
     }
   }
   
@@ -165,6 +165,11 @@
     
     .main-container-contact {
         padding: 3rem 0;
+    }
+
+    .section-contact {
+        width: 100%;
+        padding: 0 1rem;
     }
     
     .title {
@@ -185,12 +190,12 @@
     
     
     .successMsg {
-        padding: .5rem 1.5rem;
+        padding: 1rem 1.5rem;
         border-radius: 5px;
     }
     
     .errorMsg {
-        padding: .5rem 1.5rem;
+        padding: 1rem 1.5rem;
         border-radius: 5px;
     }
   }

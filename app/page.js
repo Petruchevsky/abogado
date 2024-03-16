@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import HomePageComponent from "./components/HomePageComponent";
 import Contact from "./contacto/page";
 
+
 export const metadata = {
 	title: "Inicio",
 	description: "Bienvenido(a) a mi sitio web!",
@@ -38,6 +39,7 @@ async function Home() {
 	const descripcion = data?.descripcion;
 
 	return (
+
 		<main className="main-container-y">
 			<Header />
 			<Navbar />
@@ -45,6 +47,7 @@ async function Home() {
 			<Contact />
 			<Footer />
 		</main>
+
 	);
 }
 

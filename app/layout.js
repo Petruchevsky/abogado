@@ -7,10 +7,15 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-
+	openGraph: {
 		title: "Orlando Rojas Abogado",
-		description: "Bienvenido a mi Sitio",
-    image: "/img/logo-png.png"
+		description: "Experto en derecho Familiar y Sucesorio",
+		images: {
+			url: "/img/logo-png.png",
+		},
+		locale: "es_CL",
+		type: "website",
+	},
 };
 
 export default function RootLayout({ children }) {

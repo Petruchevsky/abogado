@@ -4,17 +4,9 @@ import Footer from "./components/Footer";
 import HomePageComponent from "./components/HomePageComponent";
 import Contact from "./contacto/page";
 
-
 export const metadata = {
-	openGraph: {
-		title: "Inicio",
-		description: "Experto en derecho Familiar y Sucesorio",
-		images: {
-			url: "/img/logo.jpeg",
-		},
-		locale: "es_CL",
-		type: "website",
-	},
+	title: "Inicio",
+	description: "Experto en derecho Familiar y Sucesorio",
 };
 
 async function getData() {
@@ -32,29 +24,25 @@ async function getData() {
 
 		const data = await response.json();
 		return data;
-
 	} catch (error) {
-		console.error("Error en getData:", error); 
-		throw error; 
+		console.error("Error en getData:", error);
+		throw error;
 	}
 }
 
 async function Home() {
-
 	const data = await getData();
 	const titulo = data?.titulo;
 	const descripcion = data?.descripcion;
 
 	return (
-
 		<main className="main-container-y">
 			<Header />
 			<Navbar />
-			<HomePageComponent props={{ titulo, descripcion }}/>
+			<HomePageComponent props={{ titulo, descripcion }} />
 			<Contact />
 			<Footer />
 		</main>
-
 	);
 }
 

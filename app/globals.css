@@ -45,7 +45,24 @@ body {
 	margin-top: 4rem;
 }
 
+.img-404 {
+	width: 60rem;
+	height: auto;
+	border-radius: 70px;
+	box-shadow: 0 0 120px red;
+	margin-top: 4rem;
+}
+
 .loading-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 10rem;
+}
+
+.not-found-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -346,9 +363,19 @@ svg {
 		width: 50rem;
 		border-radius: 60px;
 	}
+
+	.img-404 {
+		width: 37rem;
+		border-radius: 50px;
+		margin-top: 2rem;
+	}
 	
 	.loading-container {
 		padding: 8rem;
+	}
+
+	.not-found-container {
+		padding: 6rem;
 	}
 	
 	.logo-sm {
@@ -447,9 +474,19 @@ svg {
 		width: 50rem;
 		border-radius: 60px;
 	}
+
+	.img-404 {
+		width: 35rem;
+		border-radius: 50px;
+		margin-top: 2rem;
+	}
 	
 	.loading-container {
 		padding: 8rem;
+	}
+
+	.not-found-container {
+		padding: 8rem 0;
 	}
 	
 	.logo-sm {
@@ -552,9 +589,19 @@ svg {
 		border-radius: 55px;
 		margin-top: 2rem;
 	}
+
+	.img-404 {
+		width: 35rem;
+		border-radius: 50px;
+		margin-top: 2rem;
+	}
 	
 	.loading-container {
 		padding: 14rem;
+	}
+
+	.not-found-container {
+		padding: 8rem 0;
 	}
 	
 	.logo-sm {
@@ -658,10 +705,20 @@ svg {
 		width: 30rem;
 		border-radius: 55px;
 		margin-top: 1rem;
+	
+	}
+	.img-404 {
+		width: 30rem;
+		border-radius: 55px;
+		margin-top: 1rem;
 	}
 	
 	.loading-container {
 		padding: 16rem 0;
+	}
+
+	.not-found-container {
+		padding: 6rem 0;
 	}
 	
 	.logo-sm {

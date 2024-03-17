@@ -3,17 +3,7 @@ import Image from "next/image";
 import "./Header.css";
 import Link from "next/link";
 import { GoPasskeyFill } from "react-icons/go";
-import {
-	Bounce,
-	Fade,
-	Flip,
-	Hinge,
-	JackInTheBox,
-	Roll,
-	Rotate,
-	Slide,
-	Zoom,
-} from "react-awesome-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 async function Header() {
 	return (

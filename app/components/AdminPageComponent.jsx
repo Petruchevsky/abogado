@@ -11,8 +11,7 @@ import { MdOutlineDoNotDisturb } from "react-icons/md";
 import { Fade, Zoom } from "react-awesome-reveal";
 
 function AdminPageComponent() {
-	const { isLogged, setIsLogged, setCookie, getCookie, deleteCookie } =
-		useAuth();
+	const { isLogged, setIsLogged, setCookie, getCookie, deleteCookie } = useAuth();
 	const [claveMaestra, setClaveMaestra] = useState("");
 	const [error, setError] = useState("");
 

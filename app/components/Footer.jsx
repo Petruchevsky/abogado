@@ -5,7 +5,7 @@ import "./Footer.css";
 import { BsFillTelephoneInboundFill } from "react-icons/bs";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { IoMdMailUnread } from "react-icons/io";
-import { Zoom, Slide, Fade } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 async function Footer() {
 	return (
@@ -49,7 +49,7 @@ async function Footer() {
 							</div>
 						
 							<div className="RRSS-container">
-								<Link href="/socialmedia" target="blank">
+								<Link href="/socialmedia">
 									{" "}
 									<Image
 										src="/img/face.jpeg"

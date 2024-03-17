@@ -37,6 +37,23 @@ body {
 	);
 }
 
+.img-loading {
+	width: 80rem;
+	height: auto;
+	border-radius: 70px;
+	box-shadow: 0 0 120px lightskyblue;
+	margin-top: 4rem;
+}
+
+.loading-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 10rem;
+}
+
 .main-container-y {
 	display: flex;
 	flex-direction: column;
@@ -325,6 +342,15 @@ svg {
 /* Estilos para Pantallas Grandes */
 @media (max-width: 2000px) and (min-width: 1440px) {
 
+	.img-loading {
+		width: 50rem;
+		border-radius: 60px;
+	}
+	
+	.loading-container {
+		padding: 8rem;
+	}
+	
 	.logo-sm {
 		width: 16rem;
 		height: auto;
@@ -417,6 +443,15 @@ svg {
 /* Estilos para Laptops */
 @media (max-width: 1439px) and (min-width: 1024px) {
 
+	.img-loading {
+		width: 50rem;
+		border-radius: 60px;
+	}
+	
+	.loading-container {
+		padding: 8rem;
+	}
+	
 	.logo-sm {
 		width: 16rem;
 		height: auto;
@@ -512,6 +547,16 @@ svg {
 /* Estilos para Tablets */
 @media (max-width: 1023px) and (min-width: 601px) {
 
+	.img-loading {
+		width: 40rem;
+		border-radius: 55px;
+		margin-top: 2rem;
+	}
+	
+	.loading-container {
+		padding: 14rem;
+	}
+	
 	.logo-sm {
 		width: 14rem;
 		height: auto;
@@ -609,6 +654,16 @@ svg {
 /* Estilos para Móviles */
 @media (max-width: 600px) {
 
+	.img-loading {
+		width: 30rem;
+		border-radius: 55px;
+		margin-top: 1rem;
+	}
+	
+	.loading-container {
+		padding: 16rem 0;
+	}
+	
 	.logo-sm {
 		width: 12rem;
 		height: auto;

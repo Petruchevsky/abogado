@@ -1,20 +1,14 @@
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import HomePageComponent from "./components/HomePageComponent";
+import dynamic from "next/dynamic";
+const HomePageComponent = dynamic(() => import("./components/HomePageComponent"), { ssr: false });
 import Contact from "./contacto/page";
 
 
 export const metadata = {
-	openGraph: {
-		title: "Inicio",
-		description: "Experto en Derecho Familiar y Sucesorio",
-		images: {
-			url: "https://res.cloudinary.com/diqtyq9j2/image/upload/v1710605702/xysrfwbblqiawhne7ipu.jpg",
-		},
-		locale: "es_CL",
-		type: "website",
-	},
+	title: "Inicio",
+	description: "Experto en Derecho Familiar y Sucesorio",
 };
 
 async function getData() {

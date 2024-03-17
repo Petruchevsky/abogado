@@ -4,7 +4,7 @@ import { useAuth } from "../context/auth-context";
 import Link from "next/link";
 import "./HomePageComponent.css";
 import { useEffect } from "react";
-import { Fade, Slide, Flip } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 function HomePageComponent({ props }) {
 
@@ -15,11 +15,11 @@ function HomePageComponent({ props }) {
 		if (getCookie("AuthCookie")) {
 			setIsLogged(getCookie("AuthCookie"));
 		}
-	}, [getCookie("AuthCookie")]);
+	}, []);
 
 	useEffect(() => {
 		console.warn("isLogged from Home Page: ", isLogged);
-	}, [isLogged]);
+	}, []);
 
 
 	return (

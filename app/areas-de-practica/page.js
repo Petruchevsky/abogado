@@ -5,15 +5,8 @@ import AreasComponente from "../components/AreasComponent";
 
 
 export const metadata = {
-	openGraph: {
-		title: "Areas de Práctica",
-		description: "Listado de las Areas de Práctica del Derecho de Familia y Sucesorio",
-		images: {
-			url: "https://res.cloudinary.com/diqtyq9j2/image/upload/v1710605702/xysrfwbblqiawhne7ipu.jpg",
-		},
-		locale: "es_CL",
-		type: "website",
-	},
+	title: "Areas de Práctica",
+	description: "Listado de las Areas de Práctica del Derecho de Familia y Sucesorio",
 };
 
 async function getData() {

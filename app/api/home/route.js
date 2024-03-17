@@ -32,6 +32,7 @@ export async function POST(request) {
 }
 
 export async function GET() {
+	
 	const home = await prisma.home.findFirst();
 	return NextResponse.json(home);
 }

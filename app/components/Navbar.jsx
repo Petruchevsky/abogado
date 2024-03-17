@@ -8,7 +8,7 @@ import { MdOutlineQueryStats } from "react-icons/md";
 import { TbTextWrapDisabled } from "react-icons/tb";
 import { TbMessageCircleQuestion } from "react-icons/tb";
 import { BsIncognito } from "react-icons/bs";
-import { Zoom, Fade } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 
 function Navbar() {

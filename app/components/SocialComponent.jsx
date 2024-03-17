@@ -3,7 +3,7 @@ import "./SocialComponent.css";
 import Image from "next/image";
 import { MdHome } from "react-icons/md";
 import Link from "next/link";
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 function SocialComponent() {
   return (

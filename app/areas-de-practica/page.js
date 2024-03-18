@@ -35,12 +35,13 @@ async function AreasPractica() {
 	const introduccion = data?.introduccion;
 	const derechoFamilia = data?.derechoFamilia;
 	const derechoSucesorio = data?.derechoSucesorio;
+	const derechoCivil = data?.derechoCivil;
 
 	return (
 		<main className="main-container-y">
 			<Header />
 			<Navbar />
-			<AreasComponente props={{ introduccion, derechoFamilia, derechoSucesorio }} />
+			<AreasComponente props={{ introduccion, derechoFamilia, derechoSucesorio, derechoCivil }} />
 			<Footer />
 		</main>
 	);

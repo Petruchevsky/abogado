@@ -1,7 +1,6 @@
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import dynamic from "next/dynamic";
 import HomePageComponent from "./components/HomePageComponent";
 import Contact from "./contacto/page";
 

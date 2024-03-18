@@ -29,7 +29,7 @@ async function Header() {
 					<div className="derecho-container">
 						<h2 className="experto-en">Experto en</h2>
 						<h2 className="derecho">Derecho de Familia</h2>
-						<h2 className="sucesorio">& Sucesorio</h2>
+						<h2 className="sucesorio">Civil & Sucesorio</h2>
 					</div>
 				</Zoom>
 			</div>

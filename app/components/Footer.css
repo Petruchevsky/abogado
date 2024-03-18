@@ -30,6 +30,7 @@ footer {
 	padding: 0;
 	line-height: 6rem;
 	margin-bottom: 1rem;
+	text-align: center;
 }
 
 .RRSS-container {
@@ -81,6 +82,7 @@ footer {
 	transition: all 300ms;
 	letter-spacing: 1px;
 	text-decoration: none;
+	font-weight: 200;
 }
 
 .developedBy > a:nth-child(2) {
@@ -88,8 +90,7 @@ footer {
 }
 
 .developedBy a:hover {
-	color: white;
-	font-weight: bold;
+	color: var(--yellow);
 	transform: scale(1.03);
 }
 
@@ -241,8 +242,8 @@ footer {
     
 	.section-footer {
 		flex-direction: column;
-		gap: 2rem;
-		width: 80%;
+		gap: 4rem;
+		width: 90%;
 		margin: 0 auto;
 		padding-bottom: 2rem;
 	}

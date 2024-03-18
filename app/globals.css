@@ -300,17 +300,17 @@ svg {
 	font-size: 3rem;
 }
 
-.link, .link > p {
+.link, .link > p, .link > h3 {
 	font-size: 2.4rem;
 	color: var(--white);
-	font-weight: 200;
-	transition: all 300ms ease-in-out;
+	font-weight: 300;
+	transition: all 200ms ease-in-out;
 	text-decoration: none;
 }
 
-.link:hover, .link > p:hover {
-	color: var(--white);
-	transform: scale(1.02);
+.link:hover, .link > p:hover, .link > h3:hover {
+	color: var(--yellow);
+	transform: scale(1.01);
 }
 
 .success {

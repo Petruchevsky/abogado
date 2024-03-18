@@ -36,4 +36,5 @@ model Areas {
   introduccion String
   derechoFamilia String
   derechoSucesorio String
+  derechoCivil String?
 }

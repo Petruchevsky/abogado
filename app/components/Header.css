@@ -39,26 +39,24 @@ header {
 }
 
 .abogado {
-	font-size: 4rem;
+	font-size: 4.5rem;
 	font-weight: 300;
-	color: var(--gray);
 	text-transform: uppercase;
-	text-align: center;
+	color: var(--white);
 }
 
 .orlando {
-	font-size: 5rem;
-	font-weight: 500;
+	font-size: 4.5rem;
+	font-weight: 300;
 	text-transform: uppercase;
 	color: var(--white);
 }
 
 .rojas {
-	font-size: 4rem;
+	font-size: 4.5rem;
 	font-weight: 300;
 	text-transform: uppercase;
-	color: var(--lightgray);
-	text-align: center;
+	color: var(--white);
 }
 
 .derecho-container {
@@ -120,15 +118,24 @@ header {
 	}
 
 	.abogado {
-		font-size: 2.5rem !important;
+		font-size: 3rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: var(--white);
 	}
-
+	
 	.orlando {
-		font-size: 3.5rem !important;
+		font-size: 3rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: var(--white);
 	}
-
+	
 	.rojas {
-		font-size: 2.5rem !important;
+		font-size: 3rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: var(--white);
 	}
 
 	.derecho-container {
@@ -167,15 +174,24 @@ header {
 	}
 
 	.abogado {
-		font-size: 2.5rem;
+		font-size: 2.8rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: var(--white);
 	}
-
+	
 	.orlando {
-		font-size: 3.5rem;
+		font-size: 2.8rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: var(--white);
 	}
-
+	
 	.rojas {
-		font-size: 2.5rem;
+		font-size: 2.8rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: var(--white);
 	}
 
 	.derecho-container {
@@ -222,15 +238,24 @@ header {
 	}
 
 	.abogado {
-		font-size: 2rem;
+		font-size: 2.5rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: var(--white);
 	}
-
+	
 	.orlando {
-		font-size: 2.7rem;
+		font-size: 2.5rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: var(--white);
 	}
-
+	
 	.rojas {
-		font-size: 2rem;
+		font-size: 2.5rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: var(--white);
 	}
 
 	.derecho-container {
@@ -278,23 +303,29 @@ header {
 	}
 
 	.orlando-container {
-		line-height: 2rem;
+		line-height: 2.2rem;
 		text-align: left;
 	}
 
 	.abogado {
-		font-size: 1.4rem;
-		text-align: left;
+		font-size: 2.3rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: var(--white);
 	}
-
+	
 	.orlando {
-		font-size: 1.8rem;
-		text-align: left;
+		font-size: 2.3rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: var(--white);
 	}
-
+	
 	.rojas {
-		font-size: 1.4rem;
-		text-align: left;
+		font-size: 2.3rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: var(--white);
 	}
 
 	.derecho-container {

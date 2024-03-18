@@ -13,6 +13,7 @@ function AreasEdit() {
 	const [introduccion, setIntroduccion] = useState("");
 	const [derechoFamilia, setDerechoFamilia] = useState("");
 	const [derechoSucesorio, setDerechoSucesorio] = useState("");
+	const [derechoCivil, setDerechoCivil] = useState("");
 	const [edit, setEdit] = useState(false);
 	const router = useRouter();
 	const { getCookie, isLogged, logout, setIsLogged, deleteCookie } = useAuth();
@@ -21,7 +22,7 @@ function AreasEdit() {
 		if (!getCookie || !isLogged) {
 			router.push("/admin");
 		}
-	}, [isLogged]);
+	}, []);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -34,6 +35,7 @@ function AreasEdit() {
 				setIntroduccion(data.introduccion);
 				setDerechoFamilia(data.derechoFamilia);
 				setDerechoSucesorio(data.derechoSucesorio);
+				setDerechoCivil(data.derechoCivil);
 			} catch (error) {
 				throw Error(error.message);
 			}
@@ -43,7 +45,7 @@ function AreasEdit() {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		const data = { introduccion, derechoFamilia, derechoSucesorio };
+		const data = { introduccion, derechoFamilia, derechoSucesorio, derechoCivil };
 
 		try {
 			const res = await fetch("/api/areas-de-practica", {
@@ -65,7 +67,7 @@ function AreasEdit() {
 		<main className="container section-areas-edit">
 			<div className="article-areas-edit">
 			<Image src="/img/logo-png.png" width={500} height={500} alt="logo de Orlando Rojas" className="logo-sm" />
-        	<h1>Editor de Página de Areas de Práctica</h1>
+        	<h1>Editor de Página de Áreas de Práctica</h1>
 				
 				<form onSubmit={handleSubmit}>
 					<label htmlFor="introduccion">Introducción</label>
@@ -82,17 +84,25 @@ function AreasEdit() {
 						value={derechoFamilia}
 						onChange={(e) => setDerechoFamilia(e.target.value)}
 						placeholder="Ingresa el nuevo texto para Derecho de Familia"
-						required
+						
+						
+					/>
+					<label htmlFor="derechoFamilia">Derecho Civil</label>
+					<textarea
+						type="text"
+						value={derechoCivil}
+						onChange={(e) => setDerechoCivil(e.target.value)}
+						placeholder="Ingresa el nuevo texto para Derecho Civil"
+						
 						
 					/>
                     <label htmlFor="derechoFamilia">Derecho Sucesorio</label>
-
 					<textarea
 						type="text"
 						value={derechoSucesorio}
 						onChange={(e) => setDerechoSucesorio(e.target.value)}
 						placeholder="Ingresa el nuevo texto para Derecho Sucesorio"
-						required
+						
 						
 					/>
 					<button className="link-button-success" type="submit">

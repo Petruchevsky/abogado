@@ -49,7 +49,7 @@ function Navbar() {
 			</Link>
 			<Link href="/areas-de-practica" className={isActive("/areas-de-practica")}>
 				<TbTextWrapDisabled />
-				Areas de Práctica
+				Áreas de Práctica
 			</Link>
 			<Link href="/poliza-de-privacidad" className={isActive("/poliza-de-privacidad")}>
 			<BsIncognito />

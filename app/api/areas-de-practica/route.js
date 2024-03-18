@@ -8,7 +8,7 @@ export async function POST (request) {
     const existingEntries = await prisma.areas.findMany();
     const isEmpty = existingEntries.length === 0;
 
-    const { introduccion, derechoFamilia, derechoSucesorio } = await request.json();
+    const { introduccion, derechoFamilia, derechoSucesorio, derechoCivil } = await request.json();
 
     if(isEmpty) {
         const newAreas = await prisma.areas.create({
@@ -16,6 +16,7 @@ export async function POST (request) {
                 introduccion: introduccion,
                 derechoFamilia: derechoFamilia,
                 derechoSucesorio: derechoSucesorio,
+                derechoCivil: derechoCivil
             }
         });
         return NextResponse.json(newAreas);
@@ -26,6 +27,7 @@ export async function POST (request) {
                 introduccion: introduccion,
                 derechoFamilia: derechoFamilia,
                 derechoSucesorio: derechoSucesorio,
+                derechoCivil: derechoCivil
             }
         });
         return NextResponse.json(updatedAreas);

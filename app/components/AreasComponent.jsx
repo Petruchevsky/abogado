@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { Slide, Zoom } from "react-awesome-reveal";
 
 function AreasComponente({ props }) {
-	const { introduccion, derechoFamilia, derechoSucesorio } = props;
+	const { introduccion, derechoFamilia, derechoSucesorio, derechoCivil } = props;
 	const { getCookie, isLogged, setIsLogged } = useAuth();
 
 	useEffect(() => {
@@ -36,6 +36,14 @@ function AreasComponente({ props }) {
 								<h1>Derecho de Familia</h1>
 								<div>
 									<pre className="pre-tag">{derechoFamilia}</pre>
+								</div>
+							</Zoom>
+						</article>
+						<article className="article-area">
+							<Zoom cascade delay={200}>
+								<h1>Derecho Civil</h1>
+								<div>
+									<pre className="pre-tag">{derechoCivil}</pre>
 								</div>
 							</Zoom>
 						</article>

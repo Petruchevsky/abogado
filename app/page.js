@@ -7,7 +7,7 @@ import Contact from "./contacto/page";
 
 export const metadata = {
 	title: "Inicio",
-	description: "Experto en Derecho Familiar y Sucesorio",
+	description: "Experto en Derecho Familiar, Civil y Sucesorio",
 };
 
 async function getData() {

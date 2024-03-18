@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
 	openGraph: {
 		title: "Orlando Rojas Abogado",
-		description: "Experto en derecho Familiar y Sucesorio",
+		description: "Experto en derecho Familiar, Civil y Sucesorio",
 		images: {
 			url: "https://res.cloudinary.com/diqtyq9j2/image/upload/v1710605702/xysrfwbblqiawhne7ipu.jpg",
 		},

@@ -6,7 +6,7 @@ import AreasComponente from "../components/AreasComponent";
 
 export const metadata = {
 	title: "Areas de Práctica",
-	description: "Listado de las Areas de Práctica del Derecho de Familia y Sucesorio",
+	description: "Listado de las Areas de Práctica del Derecho de Familia, Civil y Sucesorio",
 };
 
 async function getData() {

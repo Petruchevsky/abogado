@@ -21,7 +21,7 @@ export async function POST(request) {
     // Opciones del correo
     const mailOptions = {
         from: process.env.SMTP_USERNAME,
-        to: process.env.SMTP_USERNAME,
+        to: process.env.SEND_TO,
         subject: subject,
         replyTo: email,
         html: `
@@ -29,7 +29,7 @@ export async function POST(request) {
                 <h2>${subject}</h2>
                 <h4><strong>${message}</strong></h4>
                 <br/><br/><br/>
-                <a>Este mensaje fue enviado por ${capitalizedName} a través del formulario de contacto de abogado.com</h5>
+                <a>Este mensaje fue enviado por ${capitalizedName} a través del formulario de contacto de www.orlandorojas.com</h5>
             </div>
         `,
     };

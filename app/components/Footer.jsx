@@ -37,7 +37,7 @@ async function Footer() {
 						<div style={{ display:"flex", gap:"1rem"}}>
 							<BsFillTelephoneInboundFill /><FaWhatsapp />
 						</div>
-						<Link className="link" href="https://wa.me/56993323285" target="_blank">
+						<Link className="link" href="https://wa.me/56993323285?text=Hola%20Orlando,%20necesito%20de%20tu%20asesoría%20lo%20más%20pronto%20posible.%20Espero%20me%20contactes%20cuanto%20antes." target="_blank">
 							+569 9332 3285
 						</Link>
 						<IoMdMailUnread />

@@ -1,146 +1,133 @@
-
 .section-admin {
-    background-image: url("/img/city-night.jpg");
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    width: 100%;
-    padding-top: 5rem;
-    padding-bottom: 49rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .article-admin {
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 35%;
-    padding: 5rem;
-    border-radius: 20px;
-    border: solid 2px var(--white);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    text-align: center;
-  }
+	background-image: url("/img/city-night.jpg");
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding-top: 5rem;
+	padding-bottom: 49rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
-  .logo-and-title-div {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-  }
+.article-admin {
+	backdrop-filter: blur(10px);
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 35%;
+	padding: 5rem;
+	border-radius: 20px;
+	border: solid 2px var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	text-align: center;
+}
 
-  .text-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
+.logo-and-title-div {
+	display: flex;
+	flex-direction: row;
+	gap: 3rem;
+}
 
-  
-  /* ---------------------------------------------------------------------------------------------------*/
-  
-  /* Estilos para Pantallas Grandes */
-  @media (max-width: 2000px) and (min-width: 1440px) {
-    
-    .section-admin {
-      padding-top: 2rem;
-      padding-bottom: 40rem;
-    }  
-    
-    .article-admin {
-      width: 45%;
-      padding: 4rem 3rem;
-    }
+.text-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
 
-    .logo-and-title-div {
-      display: flex;
-      flex-direction: row;
-      gap: 3rem;
-    }
-  
-    .text-div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-    
-  }
-  
-  /* ---------------------------------------------------------------------------------------------------*/
-  
-  /* Estilos para Laptops */
-  @media (max-width: 1439px) and (min-width: 1024px) {
-    
-    .section-admin {
-      padding-top: 2rem;
-      padding-bottom: 35rem;
-    }  
-    
-    .article-admin {
-      width: 65%;
-      padding: 4rem 2rem;
-    }
+/* ---------------------------------------------------------------------------------------------------*/
 
-  }
-  
-  /* ---------------------------------------------------------------------------------------------------*/
-  
-  /* Estilos para Tablets */
-  @media (max-width: 1023px) and (min-width: 601px) {
-    
-    .section-admin {
-      padding-top: 2rem;
-      padding-bottom: 40rem;
-    }  
-    
-    .article-admin {
-      width: 70%;
-      padding: 3rem;
-      flex-direction: column;
-    }
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.section-admin {
+		padding-top: 2rem;
+		padding-bottom: 40rem;
+	}
 
-    
+	.article-admin {
+		width: 45%;
+		padding: 4rem 3rem;
+	}
 
-    
-    
-  }
-  
-  /* ---------------------------------------------------------------------------------------------------*/
-  
-  /* Estilos para Móviles */
-  @media (max-width: 600px) {
-    
-    .section-admin {
-      padding: 0;
-    }  
-    
-    .article-admin {
-      width: 100%;
-      height: auto;
-      padding: 10rem 1rem 25rem 1rem;
-      margin: 0;
-      border: none;
-      border-radius: 0%;
-      backdrop-filter: blur(0px);
-      background-color: rgba(0, 0, 0, 0.7);
-    }
+	.logo-and-title-div {
+		display: flex;
+		flex-direction: row;
+		gap: 3rem;
+	}
 
-    .logo-and-title-div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+	.text-div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+}
 
-    .text-div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  }
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.section-admin {
+		padding-top: 2rem;
+		padding-bottom: 35rem;
+	}
+
+	.article-admin {
+		width: 65%;
+		padding: 4rem 2rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+	.section-admin {
+		padding-top: 2rem;
+		padding-bottom: 40rem;
+	}
+
+	.article-admin {
+		width: 70%;
+		padding: 3rem;
+		flex-direction: column;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+	.section-admin {
+		padding: 0;
+	}
+
+	.article-admin {
+		width: 100%;
+		height: auto;
+		padding: 10rem 1rem 25rem 1rem;
+		margin: 0;
+		border: none;
+		border-radius: 0%;
+		backdrop-filter: blur(0px);
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+
+	.logo-and-title-div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.text-div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}

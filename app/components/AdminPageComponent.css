@@ -5,7 +5,8 @@
     background-position: bottom;
     background-repeat: no-repeat;
     width: 100%;
-    padding: 17rem;
+    padding-top: 5rem;
+    padding-bottom: 49rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +27,19 @@
     text-align: center;
   }
 
+  .logo-and-title-div {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
   
   /* ---------------------------------------------------------------------------------------------------*/
   
@@ -33,17 +47,26 @@
   @media (max-width: 2000px) and (min-width: 1440px) {
     
     .section-admin {
-      padding: 10rem 0rem;
+      padding-top: 2rem;
+      padding-bottom: 40rem;
     }  
     
     .article-admin {
-      width: 40%;
+      width: 45%;
       padding: 4rem 3rem;
     }
 
-    .logo-admin {
-      width: 18rem;
-      height: auto;
+    .logo-and-title-div {
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
+    }
+  
+    .text-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
     }
     
   }
@@ -54,11 +77,12 @@
   @media (max-width: 1439px) and (min-width: 1024px) {
     
     .section-admin {
-      padding: 10rem 0rem;
+      padding-top: 2rem;
+      padding-bottom: 35rem;
     }  
     
     .article-admin {
-      width: 50%;
+      width: 65%;
       padding: 4rem 2rem;
     }
 
@@ -70,13 +94,19 @@
   @media (max-width: 1023px) and (min-width: 601px) {
     
     .section-admin {
-      padding: 13rem 0rem;
+      padding-top: 2rem;
+      padding-bottom: 40rem;
     }  
     
     .article-admin {
       width: 70%;
       padding: 3rem;
+      flex-direction: column;
     }
+
+    
+
+    
     
   }
   
@@ -98,5 +128,19 @@
       border-radius: 0%;
       backdrop-filter: blur(0px);
       background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .logo-and-title-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }

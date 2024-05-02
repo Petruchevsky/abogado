@@ -49,7 +49,7 @@ function AreasComponente({ props }) {
 						</article>
 						<article className="article-area">
 							<Zoom cascade delay={200}>
-								<h1>Derecho de Sucesorio</h1>
+								<h1>Derecho Sucesorio</h1>
 								<div>
 									<pre className="pre-tag">{derechoSucesorio}</pre>
 								</div>

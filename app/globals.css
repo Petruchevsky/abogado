@@ -37,8 +37,8 @@ body {
 	);
 }
 
-.img-loading {
-	width: 80rem;
+.loading-img {
+	width: 50rem;
 	height: auto;
 	border-radius: 70px;
 	box-shadow: 0 0 120px lightskyblue;
@@ -46,7 +46,7 @@ body {
 }
 
 .img-404 {
-	width: 60rem;
+	width: 35rem;
 	height: auto;
 	border-radius: 70px;
 	box-shadow: 0 0 120px red;
@@ -59,7 +59,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	padding: 10rem;
+	padding-top: 5rem;
+	padding-bottom: 20rem;
 }
 
 .not-found-container {
@@ -68,7 +69,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	padding: 10rem;
+	padding: 3rem 0 25rem 0;
 }
 
 .main-container-y {
@@ -96,7 +97,7 @@ body {
 }
 
 .logo-sm {
-	width: 25rem;
+	width: 20rem;
 	height: auto;
 }
 
@@ -111,6 +112,7 @@ body {
 	align-items: center;
 	gap: 1rem;
 	font-size: 3rem;
+	text-align: left;
 }
 
 .w-100 {
@@ -360,27 +362,29 @@ svg {
 /* Estilos para Pantallas Grandes */
 @media (max-width: 2000px) and (min-width: 1440px) {
 
-	.img-loading {
-		width: 50rem;
+	.loading-img {
+		width: 30rem;
 		border-radius: 60px;
+		margin-top: 2rem;
 	}
 
 	.img-404 {
-		width: 37rem;
+		width: 25rem;
 		border-radius: 50px;
 		margin-top: 2rem;
 	}
 	
 	.loading-container {
-		padding: 8rem;
+		padding-top: 3rem;
+		padding-bottom: 24rem;
 	}
 
 	.not-found-container {
-		padding: 6rem;
+		padding: 2rem 0 25rem 0;
 	}
 	
 	.logo-sm {
-		width: 16rem;
+		width: 12rem;
 		height: auto;
 	}
 
@@ -471,27 +475,29 @@ svg {
 /* Estilos para Laptops */
 @media (max-width: 1439px) and (min-width: 1024px) {
 
-	.img-loading {
-		width: 50rem;
+	.loading-img {
+		width: 30rem;
 		border-radius: 60px;
+		margin-top: 1rem;
 	}
 
 	.img-404 {
-		width: 35rem;
+		width: 25rem;
 		border-radius: 50px;
 		margin-top: 2rem;
 	}
 	
 	.loading-container {
-		padding: 8rem;
+		padding-top: 3rem;
+		padding-bottom: 24rem;
 	}
 
 	.not-found-container {
-		padding: 8rem 0;
+		padding: 2rem 0 25rem 0;
 	}
 	
 	.logo-sm {
-		width: 16rem;
+		width: 12rem;
 		height: auto;
 	}
 
@@ -585,28 +591,29 @@ svg {
 /* Estilos para Tablets */
 @media (max-width: 1023px) and (min-width: 601px) {
 
-	.img-loading {
-		width: 40rem;
-		border-radius: 55px;
-		margin-top: 2rem;
+	.loading-img {
+		width: 30rem;
+		border-radius: 60px;
+		margin-top: 1rem;
 	}
 
 	.img-404 {
-		width: 35rem;
+		width: 20rem;
 		border-radius: 50px;
 		margin-top: 2rem;
 	}
 	
 	.loading-container {
-		padding: 14rem;
+		padding-top: 3rem;
+		padding-bottom: 24rem;
 	}
 
 	.not-found-container {
-		padding: 8rem 0;
+		padding: 2rem 0 25rem 0;
 	}
 	
 	.logo-sm {
-		width: 14rem;
+		width: 10rem;
 		height: auto;
 	}
 
@@ -702,14 +709,14 @@ svg {
 /* Estilos para Móviles */
 @media (max-width: 600px) {
 
-	.img-loading {
-		width: 30rem;
+	.loading-img {
+		width: 25rem;
 		border-radius: 55px;
 		margin-top: 1rem;
 	
 	}
 	.img-404 {
-		width: 30rem;
+		width: 20rem;
 		border-radius: 55px;
 		margin-top: 1rem;
 	}
@@ -719,11 +726,11 @@ svg {
 	}
 
 	.not-found-container {
-		padding: 6rem 0;
+		padding: 3rem 0 25rem 0;
 	}
 	
 	.logo-sm {
-		width: 12rem;
+		width: 10rem;
 		height: auto;
 	}
 

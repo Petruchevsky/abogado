@@ -2,7 +2,6 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import HomePageComponent from "./components/HomePageComponent";
-import Contact from "./contacto/page";
 
 
 export const metadata = {
@@ -41,7 +40,6 @@ async function Home() {
 			<Header />
 			<Navbar />
 			<HomePageComponent props={{ titulo, descripcion }} />
-			<Contact />
 			<Footer />
 		</main>
 	);

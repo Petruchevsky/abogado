@@ -26,10 +26,10 @@ export async function POST(request) {
         replyTo: email,
         html: `
             <div>
-                <h2>${subject}</h2>
-                <h4><strong>${message}</strong></h4>
+                <h3>${subject}</h3>
+                <h5><strong>${message}</strong></h5>
                 <br/><br/><br/>
-                <a>Este mensaje fue enviado por ${capitalizedName} a través del formulario de contacto de www.orlandorojas.com</h5>
+                <h6>Este mensaje fue enviado por ${capitalizedName} a través del formulario de contacto de www.orlandorojas.com</h6>
             </div>
         `,
     };

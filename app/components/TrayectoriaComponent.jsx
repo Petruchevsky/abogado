@@ -26,16 +26,16 @@ function TrayectoriaComponente({ props }) {
 			<Fade duration={3000}>
 				<section className="section-trayectoria">
 					<div className="img-div">
-						<Image
+						{/* <Image
 							src="/img/keanu.jpg"
 							alt="Kevin Lomax Image"
 							width={1000}
 							height={1000}
 							className="keanu"
-						/>
+						/> */}
 
 						<Image
-							src="/img/keanu2.jpg"
+							src="/img/orly.jpg"
 							alt="Kevin Lomax Image"
 							width={1000}
 							height={1000}

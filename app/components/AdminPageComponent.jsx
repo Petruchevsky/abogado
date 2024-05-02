@@ -77,19 +77,23 @@ function AdminPageComponent() {
 				<section className="section-admin main-container-y">
 					<article className="article-admin">
 						<Zoom cascade damping={0.2} delay={300}>
-							<Image
-								src="/img/logo-png.png"
-								width={500}
-								height={500}
-								alt="logo de Orlando Rojas"
-								className="logo-sm"
-							/>
-
-							<h2>Bienvenido Orlando</h2>
-							<h1 className="text-icon-aligner">
-								Por favor, ingresa tu clave maestra{" "}
-								<GoPasskeyFill className="icon-key" />
-							</h1>
+							<div className="logo-and-title-div">
+								<Image
+									src="/img/logo-png.png"
+									width={500}
+									height={500}
+									alt="logo de Orlando Rojas"
+									className="logo-sm"
+								/>
+								
+								<div className="text-div">
+									<h2>Bienvenido Orlando</h2>
+									<h1 className="text-icon-aligner">
+										Por favor, ingresa tu clave maestra{" "}
+										<GoPasskeyFill className="icon-key" />
+									</h1>
+								</div>
+							</div>
 						</Zoom>
 
 							<Zoom cascade damping={0.2} delay={300} className="w-100 m-0">

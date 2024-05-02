@@ -16,17 +16,6 @@ function Navbar() {
 	const pathname = usePathname();
 	const [path, setPath] = useState(pathname);
 
-	const handleSmoothScroll = (e)=>{
-		const hash = e.currentTarget.hash;
-		if (hash) {
-			const element = document.querySelector(hash);
-			if (element) {
-				element.scrollIntoView({ behavior: "smooth" });
-				window.history.pushState(null, null, hash);
-			}
-		}
-	}	
-
 	useEffect(() => {
 		setPath(pathname);
 	}, [pathname]);
@@ -55,7 +44,7 @@ function Navbar() {
 			<BsIncognito />
 				Póliza de Privacidad
 			</Link>
-			<Link href="/#contacto" className={isActive("/#contacto")} onClick={handleSmoothScroll}>
+			<Link href="/contacto" className={isActive("/contacto")}>
 				<TbMessageCircleQuestion />
 				Contacto
 			</Link>

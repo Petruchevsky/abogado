@@ -15,7 +15,7 @@ function FormContact() {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		setErrorMsg(null);
-		setSuccessMsg(null);
+		setSuccessMsg("Estamos enviando tu mensaje...");
 
 		const data = { name, email, subject, message }; // Definir data
 
@@ -40,9 +40,10 @@ function FormContact() {
 				setSubject("");
 				setMessage("");
 				setSuccessMsg("Te responderemos lo antes posible!");
-			}, 4000);
+			}, 2500);
 		} catch (error) {
-			setErrorMsg(error.message);
+			setErrorMsg("Error al enviar el mensaje");
+			console.log(error.message);
 
 			setTimeout(() => {
 				setName("");

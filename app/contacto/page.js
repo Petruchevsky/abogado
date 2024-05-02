@@ -1,4 +1,7 @@
 import FormContact from "../components/FormContact"
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export const metadata = {
 	title: "Contacto",
@@ -9,7 +12,10 @@ export const metadata = {
 function Contact() {
   return (
     <main id='contacto'>
+      <Header />
+      <Navbar />
       <FormContact />
+      <Footer />
     </main>
   )
 }

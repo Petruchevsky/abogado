@@ -7,7 +7,6 @@ import { useEffect } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 
 function HomePageComponent({ props }) {
-
 	const { titulo, descripcion } = props;
 	const { getCookie, isLogged, setIsLogged } = useAuth();
 
@@ -21,25 +20,26 @@ function HomePageComponent({ props }) {
 		console.warn("isLogged from Home Page: ", isLogged);
 	}, []);
 
-
 	return (
 		<main className="main-container-y">
 			<Fade duration={3000}>
-			<section className="section-home">
-				<Slide>
-				<article className="article-home">
-					<h1>{titulo}</h1>
-					<div><pre className="pre-tag">{descripcion}</pre></div>
-					<Link
-						href="/home-edit"
-						className={isLogged ? "link-button" : "hidden"}
-					>
-						<FaEdit />
-						Editar
-					</Link>
-				</article>
-				</Slide>
-			</section>
+				<section className="section-home">
+					<Slide>
+						<article className="article-home">
+							<h1>{titulo}</h1>
+							<div>
+								<pre className="pre-tag">{descripcion}</pre>
+							</div>
+							<Link
+								href="/home-edit"
+								className={isLogged ? "link-button" : "hidden"}
+							>
+								<FaEdit />
+								Editar
+							</Link>
+						</article>
+					</Slide>
+				</section>
 			</Fade>
 		</main>
 	);

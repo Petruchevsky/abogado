@@ -23,7 +23,7 @@ html {
 }
 
 body {
-	font-family: 'Inter', sans-serif;
+	font-family: "Inter", sans-serif;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -84,7 +84,6 @@ body {
 	flex-direction: row;
 	flex: 1;
 	width: 100%;
-
 }
 
 .button-container {
@@ -129,7 +128,6 @@ body {
 
 .text-l {
 	text-align: left !important;
-
 }
 
 h1 {
@@ -179,7 +177,7 @@ p {
 	letter-spacing: 0.5px;
 	line-height: 5rem;
 	margin-bottom: 2rem;
-	font-family: 'Inter', 'Segoe UI';
+	font-family: "Inter", "Segoe UI";
 	white-space: pre-wrap;
 }
 
@@ -247,7 +245,9 @@ textarea:focus {
 	border: solid 1px var(--blue);
 }
 
-.link-button, .link-button-success, .link-button-danger {
+.link-button,
+.link-button-success,
+.link-button-danger {
 	font-size: 2.4rem;
 	font-weight: 400;
 	padding: 1.2rem 2.5rem;
@@ -303,7 +303,9 @@ svg {
 	font-size: 3rem;
 }
 
-.link, .link > p, .link > h3 {
+.link,
+.link > p,
+.link > h3 {
 	font-size: 2.4rem;
 	color: var(--white);
 	font-weight: 300;
@@ -311,7 +313,9 @@ svg {
 	text-decoration: none;
 }
 
-.link:hover, .link > p:hover, .link > h3:hover {
+.link:hover,
+.link > p:hover,
+.link > h3:hover {
 	color: var(--yellow);
 	transform: scale(1.01);
 }
@@ -320,7 +324,6 @@ svg {
 	background-color: var(--green);
 	box-shadow: 0 0 10px var(--green);
 	color: var(--black);
-
 }
 
 .error {
@@ -329,7 +332,8 @@ svg {
 	color: var(--white);
 }
 
-.success, .error {
+.success,
+.error {
 	padding: 1.2rem 3rem;
 	border-radius: 8px;
 	text-align: center;
@@ -355,13 +359,12 @@ svg {
 
 .py-1 {
 	padding: 1rem 1.5rem;
-  }
+}
 
 /* --------------------------------------------------------------------------- */
 
 /* Estilos para Pantallas Grandes */
 @media (max-width: 2000px) and (min-width: 1440px) {
-
 	.loading-img {
 		width: 30rem;
 		border-radius: 60px;
@@ -373,7 +376,7 @@ svg {
 		border-radius: 50px;
 		margin-top: 2rem;
 	}
-	
+
 	.loading-container {
 		padding-top: 3rem;
 		padding-bottom: 24rem;
@@ -382,7 +385,7 @@ svg {
 	.not-found-container {
 		padding: 2rem 0 25rem 0;
 	}
-	
+
 	.logo-sm {
 		width: 12rem;
 		height: auto;
@@ -400,7 +403,7 @@ svg {
 	.text-icon-aligner {
 		font-size: 2rem;
 	}
-	
+
 	h1 {
 		font-size: 2rem;
 		margin-bottom: 2rem;
@@ -431,7 +434,8 @@ svg {
 		line-height: 3.5rem;
 	}
 
-	.link, .link > p {
+	.link,
+	.link > p {
 		font-size: 1.6rem;
 	}
 
@@ -455,7 +459,9 @@ svg {
 		line-height: 2rem;
 	}
 
-	.link-button, .link-button-success, .link-button-danger {
+	.link-button,
+	.link-button-success,
+	.link-button-danger {
 		font-size: 1.6rem;
 		padding: 1rem 1.5rem;
 		width: 40rem;
@@ -465,7 +471,8 @@ svg {
 		font-size: 2rem;
 	}
 
-	.success, .error {
+	.success,
+	.error {
 		margin: 2rem 0 0rem 0;
 	}
 }
@@ -474,7 +481,6 @@ svg {
 
 /* Estilos para Laptops */
 @media (max-width: 1439px) and (min-width: 1024px) {
-
 	.loading-img {
 		width: 30rem;
 		border-radius: 60px;
@@ -486,7 +492,7 @@ svg {
 		border-radius: 50px;
 		margin-top: 2rem;
 	}
-	
+
 	.loading-container {
 		padding-top: 3rem;
 		padding-bottom: 24rem;
@@ -495,7 +501,7 @@ svg {
 	.not-found-container {
 		padding: 2rem 0 25rem 0;
 	}
-	
+
 	.logo-sm {
 		width: 12rem;
 		height: auto;
@@ -513,7 +519,7 @@ svg {
 	.text-icon-aligner {
 		font-size: 2rem;
 	}
-	
+
 	h1 {
 		font-size: 2rem;
 		margin-bottom: 2rem;
@@ -544,7 +550,8 @@ svg {
 		line-height: 3rem;
 	}
 
-	.link, .link > p {
+	.link,
+	.link > p {
 		font-size: 1.6rem;
 	}
 
@@ -566,10 +573,11 @@ svg {
 		height: 20rem;
 		padding: 1rem 1.5rem;
 		line-height: 2rem;
-
 	}
 
-	.link-button, .link-button-success, .link-button-danger {
+	.link-button,
+	.link-button-success,
+	.link-button-danger {
 		flex: 0 0 48%;
 		width: 37rem;
 		font-size: 1.6rem;
@@ -580,17 +588,16 @@ svg {
 		font-size: 2rem;
 	}
 
-	.success, .error {
+	.success,
+	.error {
 		margin: 2rem 0 0rem 0;
 	}
-
 }
 
 /* --------------------------------------------------------------------------- */
 
 /* Estilos para Tablets */
 @media (max-width: 1023px) and (min-width: 601px) {
-
 	.loading-img {
 		width: 30rem;
 		border-radius: 60px;
@@ -602,7 +609,7 @@ svg {
 		border-radius: 50px;
 		margin-top: 2rem;
 	}
-	
+
 	.loading-container {
 		padding-top: 3rem;
 		padding-bottom: 24rem;
@@ -611,7 +618,7 @@ svg {
 	.not-found-container {
 		padding: 2rem 0 25rem 0;
 	}
-	
+
 	.logo-sm {
 		width: 10rem;
 		height: auto;
@@ -630,7 +637,7 @@ svg {
 	.text-icon-aligner {
 		font-size: 1.7rem;
 	}
-	
+
 	h1 {
 		font-size: 1.8rem;
 		margin-bottom: 2rem;
@@ -661,7 +668,8 @@ svg {
 		line-height: 2.5rem;
 	}
 
-	.link, .link > p {
+	.link,
+	.link > p {
 		font-size: 1.4rem;
 	}
 
@@ -686,7 +694,9 @@ svg {
 		line-height: 1.7rem;
 	}
 
-	.link-button, .link-button-success, .link-button-danger {
+	.link-button,
+	.link-button-success,
+	.link-button-danger {
 		font-size: 1.4rem;
 		padding: 1rem 1.5rem;
 		border-radius: 6px;
@@ -698,29 +708,27 @@ svg {
 		font-size: 2rem;
 	}
 
-	.success, .error {
+	.success,
+	.error {
 		margin: 2rem 0 1rem 0;
 	}
-
 }
 
 /* --------------------------------------------------------------------------- */
 
 /* Estilos para Móviles */
 @media (max-width: 600px) {
-
 	.loading-img {
 		width: 25rem;
 		border-radius: 55px;
 		margin-top: 1rem;
-	
 	}
 	.img-404 {
 		width: 20rem;
 		border-radius: 55px;
 		margin-top: 1rem;
 	}
-	
+
 	.loading-container {
 		padding: 16rem 0;
 	}
@@ -728,7 +736,7 @@ svg {
 	.not-found-container {
 		padding: 3rem 0 25rem 0;
 	}
-	
+
 	.logo-sm {
 		width: 10rem;
 		height: auto;
@@ -742,7 +750,7 @@ svg {
 	.text-icon-aligner {
 		font-size: 1.5rem;
 	}
-	
+
 	h1 {
 		font-size: 1.8rem;
 		margin-bottom: 2rem;
@@ -774,7 +782,8 @@ svg {
 		line-height: 2.5rem;
 	}
 
-	.link, .link > p {
+	.link,
+	.link > p {
 		font-size: 1.4rem;
 	}
 
@@ -807,7 +816,9 @@ svg {
 		font-size: 1.3rem;
 	}
 
-	.link-button, .link-button-success, .link-button-danger {
+	.link-button,
+	.link-button-success,
+	.link-button-danger {
 		font-size: 1.4rem;
 		padding: 1rem 1.5rem;
 		border-radius: 5px;
@@ -822,9 +833,10 @@ svg {
 	.button-container {
 		flex-direction: column;
 		gap: 2rem;
-	  }
+	}
 
-	  .success, .error {
+	.success,
+	.error {
 		margin: 2rem 0 0 0;
 	}
 }

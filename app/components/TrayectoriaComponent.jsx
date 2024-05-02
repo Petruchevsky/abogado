@@ -35,7 +35,7 @@ function TrayectoriaComponente({ props }) {
 						/> */}
 
 						<Image
-							src="/img/orly.jpg"
+							src="/img/orlando.jpg"
 							alt="Imagen de Orlando Rojas"
 							width={1000}
 							height={1000}

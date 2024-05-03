@@ -14,7 +14,7 @@ export default function NotFound() {
 	console.log(pathname);
 
 	useEffect(() => {
-		if(pathname === "/dos.html") {
+		if(pathname === "/uno.html" || pathname === "/dos.html" || pathname === "/tres.html") {
 			console.log(pathname)
 			router.push("/");
 		}

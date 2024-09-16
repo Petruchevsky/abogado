@@ -88,7 +88,7 @@ async function Footer() {
 			</section>
 			<Zoom className="w-100">
 				<section className="developedBy">
-					<Link href="/">Diseño y Desarrollo por Moises-WEB</Link>
+					<Link href="https://www.moises-web.cl/">Diseño y Desarrollo por MOISES-WEB</Link>
 					<Link href="/">Orlando Rojas &copy;</Link>
 					<Link href="/poliza-de-privacidad">Póliza de Privacidad</Link>
 				</section>
